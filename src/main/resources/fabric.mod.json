@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "entitys",
+  "version": "${version}",
+
+  "name": "Fabric Entitys",
+  "description": "Adds Entitys to the game",
+  "authors": [
+    "SecretAsain"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.fabricmc.entitys.Entitys"
+    ],
+    "client": [
+      "net.fabricmc.entitys.EntitysClient"
+    ]
+  },
+  "mixins": [
+    "entity.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
